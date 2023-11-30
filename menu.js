@@ -117,7 +117,8 @@ function procesarMenuCasoUno(opcion) {
             //Si la lista no está vacía...
             if (Lista.lista.length > 0) {
                 //Se le pregunta al usuario si quiere editar la tarea
-                //Nuevamente se invoca otra función, con lista y el indice devuelto por detalleTarea 
+                //Nuevamente se invoca otra función, con lista y el indice devuelto por detalleTarea
+                //editarDetalle es de orden superior, ya que toma una funcion como argumento
                 Lista.editarDetalle(Lista.lista, Lista.detalleTarea(Lista.lista));
             }
             break;
